@@ -1,0 +1,6 @@
+<tr>
+    <td style="width: 50px;">{{ data.id }}</td>
+    <td><input [(ngModel)]="data.nickname"/></td>
+    <td style="width:120px">{{ data.nickname | hash }}</td>
+    <td><input [(ngModel)]="data.score" (change)="onScoreChange($event)" style="width:120px"/></td>
+</tr>

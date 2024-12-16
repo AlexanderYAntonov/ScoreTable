@@ -1,0 +1,11 @@
+<h1>Score table</h1>
+<h2>Total score: {{ scoreService.totalScore }}</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th style="width:220px">Nickname</th>
+        <th>Nickname hash</th>
+        <th>Score</th>
+    </tr>
+    <app-table-row *ngFor="let item of scoreList" [data]="item"></app-table-row>
+</table>
